@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz Matemático ♾️</title> <!--Título do WEBSITE-->
+  </head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#pergunta1">Matemática DS24 M6</a></li>
+        </ul>
+    </nav>
+    <main>
+
+      <section id="sobre">
+        <div class="conteudo">
+            <h2 class="sobre">Sobre</h2>
+            <p>A aluna Beatriz Cercal Cachoeira, estudante da sala DS24 M6 desenvolveu este simples WEBSITE visando
+                o total aprofundamento relacionado às práticas de Matemática (especificamente, análise Combinatória),
+                e ainda Programação de Aplicativos. Foi realizado também um relatório, exemplificando as necessidades
+                encontradas e ainda aprendizados adquiridos. Pode-se perceber a simplicidade do SITE, que foi desenvolvido
+                apenas com os conhecimentos adquiridos ao dado momento (HTML e CSS).</p>
+        </div>
+    </section>
+        <section class="quiz-section"> <!--Divisão da primeira seção-->
+            <h2> Nível Juvenil ➕</h2>
+            <hr>
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/29414570-femea-capsula-definir-moda-roupas-e-acessorios-cair-inverno-roupas-calcados-chapeus-meias-bolsas-moderno-casual-vestuario-colecao-colori-plano-ilustracao-vetor.jpg" alt="Camisetas">
+            <p>Quantas combinações são possíveis possíveis realizar com 8 camisetas, 4 bermudas, 2 sapatos
+              e 4 brincos?
+            </p>
+            <form action="#" method="post"> <!--Utilização básica de JAVASCRIPT, garantindo interação-->
+                <label for="q1">Resposta:</label> <!--Interação-->
+                <input type="number" id="q1" name="q1" required>
+                <button type="button" onclick="document.querySelector('#resposta1').open = true">Verificar Resposta</button>
+            </form>
+            <details id="resposta1">
+                <summary>Clique para ver a resposta correta! Mas atenção, faça isso somente após responder!</summary>
+                <div class="result">
+                    Resposta correta: 256 combinações.
+                </div>
+                <div class="result2">
+                 Para obter o resultado correto da questão, basta multiplicar todas os objetos listados, seguindo: Camisetas x Bermudas 
+                 x Sapatos x Brincos, resultando em 8x4x2x4 = 256 combinações possíveis.
+                </div>
+            </details>
+        </section>
+
+        
+        <section class="quiz-section"> <!--Divisão da segunda seção-->
+            <h2>Nível Mediano 🟰</h2>
+            <hr> <!--Quebra de linha-->
+            <img src="https://img.freepik.com/vetores-premium/numeros-de-desenhos-animados-coloridos-para-modelo-de-cartao-de-aniversario-infantil_437674-76.jpg" alt="Camisetas">
+            
+            <p> Quantos números contendo 3 algarismos podemos formar utilizando 1,2,3,4,5,6,7 (Permitido repetição).
+            </p>
+            <form action="#" method="post"> <!--Utilização básica de JAVASCRIPT, garantindo interação-->
+                <label for="q2">Resposta:</label> <!--Interação-->
+                <input type="number" id="q2" name="q2" required>
+                <button type="button" onclick="document.querySelector('#resposta2').open = true">Verificar Resposta</button>
+            </form>
+            <details id="resposta2">
+                <summary>Clique para ver a resposta correta! Mas atenção, faça isso somente após responder!</summary>
+                <div class="result">
+                    Resposta correta: 343 números.
+                </div>
+                <div class="result2">
+                  Como especificado no enunciado, é permitida a repetição de números, portanto, basta realizar
+                  7x7x7= 343 números.
+                                                                                                
+                </div>
+            </details>
+        </section>
+
+        
+        <section class="quiz-section"> <!--Divisão da terceira seção-->
+            <h2>Nível Dificultoso ➗</h2>
+            <hr>
+            <img src="https://previews.123rf.com/images/simpleline/simpleline2302/simpleline230204553/198549318-uma-%C3%BAnica-linha-de-desenho-de-jovem-jogador-de-basquete-en%C3%A9rgico-mulher-dribbling-bola-ilustra%C3%A7%C3%A3o.jpg" alt="Camisetas">
+            <p>Imagine que você está em uma competição de Basquete Feminino, organizado visando a valorização feminina no esporte,
+              disputando o pódio (primeiro, segundo e terceiro lugar)
+             com outras 6 equipes. Partindo deste pressuposto, deduza que uma companheira de time resolva utilizar da Análise 
+             Combinatória para descobrir de quantas maneiras seria possível formar o tão almejado prêmio. Como resultado, a 
+             mesma encontrou:</p>
+            <form action="#" method="post"> <!--Utilização básica de JAVASCRIPT, garantindo interação-->
+                <label for="q3">Resposta:</label> <!--Interação-->
+                <input type="number" id="q3" name="q3" required>
+                <button type="button" onclick="document.querySelector('#resposta3').open = true">Verificar Resposta</button>
+            </form>
+            <details id="resposta3">
+                <summary>Clique para ver a resposta correta! Mas atenção, faça isso somente após responder!</summary>
+                <div class="result">
+                    Resposta correta:  210 maneiras.
+                </div>
+                <div class="result2">
+                  Na resolução deste problema, utilize, de modo certeiro a seguinte "fórmula": (7!÷(7-3)!), 
+                  sendo o 7! o número total de equipes, e a seguinte equação (7-3)! a diminuição das três posições 
+                  possíveis de se alcançar no pódio. Como resolução, temos: 7x6x5x4!÷4!, eliminando o elemento repetido (4!),
+                  temos 7x6x5= 210.
+                </div>
+            </details>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>&copy; 2025 - Quiz Matemático. Todos os direitos reservados à aluna Beatriz Cercal Cachoeira.</p>
+    </footer>
+</body>
+
+</html>
